@@ -1,0 +1,63 @@
+# Python Comment Notes - Detailed Version
+
+# -------------------------------------------
+# 1. What is a Comment?
+# Comment वह line होती है जिसे Python ignore करता है
+# इसका use केवल human-readable notes लिखने के लिए होता है
+# Comments code को समझने में मदद करते हैं
+# Comments का use debugging या code explanation के लिए भी किया जाता है
+
+# 1. Single-line Comment
+# Single-line comment एक line में लिखे गए note होते हैं
+# Python इसे ignore करता है, यह सिर्फ human-readable होता है
+print("Hello World")  # यह भी single-line comment है
+
+# Example:
+# यह code print करेगा Hello World
+print("Python is fun")  # यह भी print statement है
+
+# -------------------------------------------
+
+# 2. Multi-line Comment
+# Multi-line comment कई lines में लिखे notes होते हैं
+# Syntax: triple quotes """ """ या ''' '''
+# Python इन्हें ignore करता है
+"""
+यह multi-line comment है
+Python इसे ignore करेगा
+आप कई lines comment में लिख सकते हैं
+Multi-line comment को code explain करने या documentation के लिए use करते हैं
+"""
+print("Hello from multi-line comment example")
+
+# -------------------------------------------
+
+# 3. Quick Trick to Remember
+# # → Single-line comment
+# ''' ''' / """ """ → Multi-line comment
+# Comment = Python ignore करता है, सिर्फ human-readable note है
+# Comment का use code को readable और maintainable बनाने के लिए किया जाता है
+# Debugging के लिए भी comment useful होता है (code को temporarily बंद करने के लिए)
+
+# -------------------------------------------
+
+# 4. Output Examples
+
+# Single-line comment example
+print("Hi")  # Output: Hi
+
+# Multi-line comment example
+"""
+यह multi-line comment example है
+Python इसे ignore करेगा
+"""
+print("Bye")  # Output: Bye
+
+# -------------------------------------------
+
+# 5. Important Points
+# 1. Comments Python execute नहीं करता
+# 2. Comments से code को समझना आसान होता है
+# 3. Multi-line comment में code लिख सकते हैं लेकिन वो ignore होगा
+# 4. Always triple quotes properly open और close करें
+# 5. Single-line comment में # के बाद जो भी लिखा है, Python ignore करेगा

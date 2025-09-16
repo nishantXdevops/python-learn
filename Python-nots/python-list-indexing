@@ -1,0 +1,155 @@
+# =============================
+# 1️⃣ WHAT IS A LIST?
+# =============================
+my_list = [10, 20, 30, "Python", True]
+print(my_list)  
+# Output: [10, 20, 30, 'Python', True]
+
+# =============================
+# 2️⃣ CREATING A LIST
+# =============================
+numbers = [1, 2, 3, 4, 5]
+fruits = ["apple", "banana", "cherry"]
+mixed_list = [10, "hello", True, 3.14]
+
+print(numbers)
+print(fruits)
+print(mixed_list)
+# Output:
+# [1, 2, 3, 4, 5]
+# ['apple', 'banana', 'cherry']
+# [10, 'hello', True, 3.14]
+
+# =============================
+# 3️⃣ LIST POSITIVE INDEXING
+# =============================
+fruits = ["apple", "banana", "cherry", "mango"]
+print(fruits[0])   
+print(fruits[2])   
+# Output:
+# apple
+# cherry
+
+# =============================
+# 4️⃣ LIST NEGATIVE INDEXING
+# =============================
+print(fruits[-1])  
+print(fruits[-2])  
+# Output:
+# mango
+# cherry
+
+# =============================
+# 5️⃣ ACCESSING LIST ITEMS (INDEXING + SLICING)
+# =============================
+numbers = [10, 20, 30, 40, 50]
+print(numbers[0])    
+print(numbers[-1])   
+print(numbers[1:4])  
+print(numbers[:3])   
+print(numbers[2:])   
+print(numbers[::2])  
+# Output:
+# 10
+# 50
+# [20, 30, 40]
+# [10, 20, 30]
+# [30, 40, 50]
+# [10, 30, 50]
+
+# =============================
+# 6️⃣ ACCESSING NESTED LIST
+# =============================
+nested_list = [1, 2, [10, 20, 30], 4]
+print(nested_list[2])      
+print(nested_list[2][0])   
+print(nested_list[2][1:])  
+# Output:
+# [10, 20, 30]
+# 10
+# [20, 30]
+
+# =============================
+# 7️⃣ LIST CONCATENATION
+# =============================
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = list1 + list2
+print(combined)  
+# Output: [1, 2, 3, 4, 5, 6]
+
+# =============================
+# 8️⃣ LIST REPETITION
+# =============================
+list1 = [1, 2]
+repeated = list1 * 3
+print(repeated)  
+# Output: [1, 2, 1, 2, 1, 2]
+
+# =============================
+# 9️⃣ LIST FUNCTIONS / METHODS
+# =============================
+my_list = [10, 20, 30]
+my_list.append(40)      
+my_list.insert(1, 15)   
+my_list.remove(20)      
+popped = my_list.pop()  
+print(my_list)          
+print(popped)           
+# Output:
+# [10, 15, 30, 40]
+# 40
+
+# =============================
+# 🔟 USING LIST AS STACK
+# =============================
+stack = []
+stack.append(10)  
+stack.append(20)
+stack.append(30)
+print(stack)       
+top = stack.pop()  
+print(top)         
+print(stack)       
+# Output:
+# [10, 20, 30]
+# 30
+# [10, 20]
+
+# =============================
+# 1️⃣1️⃣ USING LIST AS QUEUE
+# =============================
+queue = []
+queue.append(10)   
+queue.append(20)
+queue.append(30)
+print(queue)       
+first = queue.pop(0)  
+print(first)       
+print(queue)       
+# Output:
+# [10, 20, 30]
+# 10
+# [20, 30]
+
+# =============================
+# 1️⃣2️⃣ INVALID INDEXING
+# =============================
+fruits = ["apple", "banana", "cherry"]
+# print(fruits[3])   # ❌ IndexError
+# print(fruits[-5])  # ❌ IndexError
+print(len(fruits))   
+# Output: 3
+
+# =============================
+# 1️⃣3️⃣ QUICK SUMMARY
+# =============================
+# List = ordered, mutable
+# Indexing: 0 → first, -1 → last
+# Nested list: access with multiple indices
+# Concatenation: list1 + list2
+# Repetition: list * n
+# Functions: append, insert, remove, pop, sort, reverse
+# Stack → LIFO (append/pop)
+# Queue → FIFO (append/pop(0))
+# Always avoid invalid indexing

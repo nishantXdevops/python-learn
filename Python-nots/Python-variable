@@ -1,0 +1,88 @@
+# ===============================================
+# Python Variables - Complete Notes
+# ===============================================
+
+# 1️⃣ Python Variable क्या है?
+# Variable = एक container जिसमें हम data store करते हैं
+# Python variable किसी भी type का data hold कर सकता है
+# Variable का नाम हमें data को reference करने के लिए use करना पड़ता है
+
+# Example:
+name = "Nishant"      # string variable
+age = 20              # integer variable
+pi = 3.14             # float variable
+is_student = True     # boolean variable
+
+print(name, age, pi, is_student)
+
+# ----------------------------------------------
+
+# 2️⃣ Rules for Variable Names
+# 1. Variable name letters, numbers और _ से बन सकता है
+# 2. First character letter या underscore होना चाहिए, number नहीं
+# 3. Spaces allowed नहीं हैं
+# 4. Keywords (जैसे print, for, if) variable name में use नहीं हो सकते
+# 5. Case-sensitive होते हैं (name ≠ Name)
+
+# ----------------------------------------------
+
+# 3️⃣ Valid Variable Names
+name = "Nishant"
+_age = 20
+total_marks = 450
+pi3 = 3.14
+is_student = True
+user_name = "Python"
+
+print(name, _age, total_marks, pi3, is_student, user_name)
+
+# ----------------------------------------------
+
+# 4️⃣ Invalid Variable Names
+# 2name = "Nishant"    # ❌ starts with number
+# my age = 20          # ❌ space not allowed
+# for = 10             # ❌ keyword not allowed
+# name$ = "Nishant"    # ❌ special character not allowed
+
+# ----------------------------------------------
+
+# 5️⃣ Variable Tips
+# - Always meaningful name use करो: age, total_marks, pi_value
+# - Snake_case preferred: my_name, total_marks
+# - Variables को update कर सकते हैं:
+age = 21
+print("Updated Age:", age)
+
+# - Multiple assignment भी possible है:
+x, y, z = 10, 20, 30
+print(x, y, z)
+
+# - One value multiple variables में assign करना:
+a = b = c = 50
+print(a, b, c)
+
+# ----------------------------------------------
+
+# 6️⃣ Data Types in Variables
+# Python automatically data type assign करता है
+# Examples:
+name = "Nishant"       # string
+age = 20               # integer
+pi = 3.14              # float
+is_student = True      # boolean
+marks = [80, 90, 85]   # list
+details = {"name":"Nishant","age":20}  # dictionary
+
+print(name, age, pi, is_student, marks, details)
+
+# ----------------------------------------------
+
+# End of Python Variables Notes
+# ===============================================
+
+Nishant 20 3.14 True
+Nishant 20 450 3.14 True Python
+Updated Age: 21
+10 20 30
+50 50 50
+Nishant 20 3.14 True [80, 90, 85] {'name': 'Nishant', 'age': 20}

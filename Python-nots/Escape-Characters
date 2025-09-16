@@ -1,0 +1,79 @@
+🔹 Escape Character क्या है?
+
+Escape character वो special character है जो string में कोई special काम करने के लिए use होता है।
+Python में ये हमेशा backslash \ से शुरू होता है।
+
+# Python Escape Characters Notes - Detailed Version
+
+# -------------------------------------------
+# 1. What is Escape Character?
+# Escape character एक special character है जो string में special काम करता है
+# Python में escape character हमेशा backslash \ से शुरू होता है
+# इसका use string के अंदर special symbol या formatting के लिए किया जाता है
+# Example:
+b = "Hello\nWorld"  # \n = new line
+print(b)  # Output: 
+# Hello
+# World
+
+# -------------------------------------------
+# 2. Common Escape Characters
+
+# \n → New line
+print("Line1\nLine2")  # Output:
+# Line1
+# Line2
+
+# \t → Tab space (extra gap)
+print("Name:\tNishant")  # Output: Name:    Nishant
+
+# \\ → Backslash
+print("C:\\Users\\Nishant")  # Output: C:\Users\Nishant
+
+# \' → Single quote
+print("It\'s my book")  # Output: It's my book
+
+# \" → Double quote
+print("He said, \"Hi\"")  # Output: He said, "Hi"
+
+# -------------------------------------------
+# 3. Important Points
+
+# 1. Escape character हमेशा backslash \ से शुरू होता है
+# 2. Python string में slicing में start index included और end index excluded होता है
+# 3. Windows path लिखने के लिए \\ या raw string r"" use करें
+# 4. Invalid escape sequence (\P, \Q) Python error देगा
+# 5. \n = new line, \t = tab, \\ = backslash, \' = single quote, \" = double quote
+
+# -------------------------------------------
+# 4. Quick Trick to Remember
+
+# Formula: \ + special symbol = special action
+# Examples:
+# \n = new line
+# \t = tab space
+# \\ = backslash
+# \' = single quote
+# \" = double quote
+
+# -------------------------------------------
+# 5. Output Examples
+
+print("Hello\nWorld")        # Output:
+# Hello
+# World
+
+print("Name:\tNishant")      # Output: Name:    Nishant
+
+print("C:\\Users\\Nishant")  # Output: C:\Users\Nishant
+
+print("It\'s my book")       # Output: It's my book
+
+print("He said, \"Hi\"")     # Output: He said, "Hi"
+
+# -------------------------------------------
+# 6. Extra Tip
+
+# Double backslash \\ → actual backslash print करने के लिए
+# Raw string r" " → special characters ignore करने के लिए
+print(r"C:\Users\Nishant")  # Output: C:\Users\Nishant
